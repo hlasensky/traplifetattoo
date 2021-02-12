@@ -6,9 +6,9 @@
 
     &__header {
         font-family: 'Tuffy-Bold';
-        padding: 10rem;
+        padding: 7rem;
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
 
@@ -40,18 +40,18 @@
             }
 
             &-inputs > input, &-inputs > textarea {
-                margin-top: 1rem;
+                margin-top: 3rem;
                 position: relative;
                 left: 50%;
                 transform: translateX(-50%);
             }
 
             &-input {
-                width: 40%;
-                height: 4rem;
-                border-radius: 2rem;
+                width: 45%;
+                height: 5.5rem;
+                border-radius: 3.5rem;
                 border: none;
-                padding: 0 1rem;
+                padding: 0 1.5rem;
                 font-size: 1.8rem;
             }
 
@@ -60,28 +60,34 @@
             }
 
             &-textarea {
-                width: 40%;
-                height: 8rem;
-                border-radius: 2rem;
-                font-size: 1.8rem;
-                padding: 1rem;
+                width: 45%;
+                height: 18rem;
+                border-radius: 2.5rem;
+                font-size: 2.3rem;
+                padding: 1.3rem;
             }
 
             &-submit {
-
+                width: 20%;
+                border-radius: 3rem;
+                padding: 1rem;
+                background-color: $color-wite;
+                color: #323232;
+                font-size: 1.8rem;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 2rem;
+                font-family: 'Tuffy-Bold';
+                cursor: pointer;
             }
         }
     }
 
     &__socials {
         display: flex;
-        width: 40rem;
+        width: 48rem;
         margin: 0 auto;
-
-        &-header {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
+        margin-top: 2rem;
 
         &-container {
             &-last {
@@ -95,12 +101,12 @@
             text-decoration: none;
 
             &-icon {
-                width: 4rem;
+                width: 5rem;
             }
     
             &-link {
                 color: $color-wite;
-                font-size: 2rem;
+                font-size: 2.5rem;
                 margin-left: 1rem;
             }
         }
