@@ -1,0 +1,73 @@
+@import '../../styles/variables.scss';
+
+.contact {
+    color: $color-wite;
+    background-color: $color-grey-dark;
+
+    &__header {
+        font-family: 'Tuffy-Bold';
+        padding: 10rem;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    &__socials {
+        display: flex;
+        width: 40rem;
+        margin: 0 auto;
+
+        &-header {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        &-container {
+            &-last {
+                margin-left: auto;
+            }
+        }
+
+        &-content {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+
+            &-icon {
+                width: 4rem;
+            }
+    
+            &-link {
+                color: $color-wite;
+                font-size: 2rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    &__others {
+
+        margin-top: 3rem;
+
+        &-container {
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-icon {
+            width: 5rem;
+        }
+
+        &-text {
+            font-size: 1.5rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+    &__copyright {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}

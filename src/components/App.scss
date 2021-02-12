@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Tuffy-Bold';
+    src: local('Tuffy-Bold'), url(../fonts/Tuffy-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Tuffy-Regular';
+    src: local('Tuffy-Regular'), url(../fonts/Tuffy-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Tuffy-Italic';
+    src: local('Tuffy-Italic'), url(../fonts/Tuffy-Italic.ttf) format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +24,8 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; //1rem = 10px
+    font-size: 62.5%; // 1rem = 10px
+    font-family: 'Segoe UI'; // default font
 }
 
 body {
