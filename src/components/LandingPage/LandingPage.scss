@@ -2,9 +2,32 @@
 
 
 .landingpage {
+    position: relative;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    padding-top: 2.5rem;
+
+    &__box {
+        position: absolute;
+        top: 36rem;
+        left: 30rem;
+    }
+
+    &__header{
+        color: $color-wite;
+        text-transform: uppercase;
+        &-primary {
+            height: 11rem;
+            font-size: $font-size-header-primary;
+        }
+
+        &-secondary {
+            font-weight: 200;
+            font-size: $font-size-huge;
+            font-family: italic;
+        }
+    }
 }
