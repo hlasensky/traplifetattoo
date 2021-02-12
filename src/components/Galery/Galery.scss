@@ -1,4 +1,11 @@
+@import '../../styles/variables.scss';
 
+.foto_container {
+    color: $color-wite;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .foto {
     opacity: 1;

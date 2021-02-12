@@ -9,9 +9,9 @@ const App = () => {
     
     return (
         <div>
-            <Galery />
             <LandingPage />
             <AboutMe />
+            <Galery />
             <Contact />
         </div>
     );
