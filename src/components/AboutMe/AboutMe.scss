@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+.aboutme {
+    padding-top: 25rem;
+    height: 100vh;
+    background-color: $color-grey-dark;
+    clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0% 100%);
+    margin-top: -10.1vh;
+
+    &__content {
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 0 auto;
+        
+    }
+
+    &__image {
+        height: 55rem;
+        border: 0.6rem solid $color-wite;
+    }
+
+    &__box {
+        width: 70rem;
+        margin-left: 5rem;
+    }
+
+    &__header{
+        color: $color-wite;
+        font-size: 7rem;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: $color-wite;
+        font-size: 1.6rem;
+    }
+
+    &__something {
+        color: $color-wite;
+        font-size: 3rem;
+        text-align: right;
+        margin-top: 5rem;
+    }
+}
