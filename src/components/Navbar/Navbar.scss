@@ -1,0 +1,36 @@
+@import './../../styles/variables.scss';
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-left: 2.5rem;
+        &-text {
+            color: $color-wite;
+            font-size: $font-size-huge;
+            text-transform: uppercase;
+        }
+    }
+
+    &__box {
+        width: 80rem;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        font-size: $font-size-huge;
+        color: $color-wite;
+        font-weight: 600;
+        transition: all .2s;
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    }
+}
