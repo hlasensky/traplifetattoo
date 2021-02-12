@@ -8,7 +8,6 @@
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
-    padding-top: 2.5rem;
 
     &__box {
         margin-top: 24rem;
@@ -20,22 +19,21 @@
         text-transform: uppercase;
         &-primary {
             height: 12rem;
-            font-size: $font-size-header-primary;
+            font-size: 9rem;
         }
 
         &-secondary {
             font-weight: 200;
-            font-size: $font-size-huge;
-            font-family: italic;
+            font-size: 3rem;
+            font-family: 'Tuffy-Italic';
         }
     }
     &__btn {
-        height: 6rem;
-        margin-top: 25rem;
+        height: 4rem;
+        margin-top: 30rem;
         transition: all .2s;
         &:hover {
-            transform: scale(1.2);
-            
+            transform: scale(1.1);
             cursor: pointer;
         }
     }

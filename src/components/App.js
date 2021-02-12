@@ -7,6 +7,7 @@ import LandingPage from '../components/LandingPage/LandingPage';
 const App = () => {
     return (
         <div>
+            <LandingPage />
             <Contact />
         </div>
     );

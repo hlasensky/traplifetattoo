@@ -7,16 +7,21 @@
     &__logo {
         display: flex;
         align-items: center;
+        margin-top: 2rem;
         margin-left: 2.5rem;
         &-text {
             color: $color-wite;
-            font-size: $font-size-huge;
+            font-size: 2.2rem;
             text-transform: uppercase;
+        }
+
+        &-img {
+            height: 10rem;
         }
     }
 
     &__box {
-        width: 80rem;
+        width: 60rem;
         display: flex;
         justify-content: space-around;
         list-style: none;
@@ -24,7 +29,7 @@
     }
 
     &__item {
-        font-size: $font-size-huge;
+        font-size: 2.2rem;
         color: $color-wite;
         font-weight: 600;
         transition: all .2s;
