@@ -1,10 +1,12 @@
 import React from 'react';
 import './LandingPage.scss'
 
+import '../Navbar/Navbar';
+
 const LandingPage = () => {
     return (
-        <div>
-            LandingPage
+        <div className='landingpage' style={{ backgroundImage: "url('/img/landing-bg.jfif')"}}>
+            
         </div>
     );
 };
