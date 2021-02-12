@@ -1,50 +1,43 @@
 import './Galery.scss'
 import React from "react";
-import first from "./imges/1.jpg"
-import second from "./imges/2.jpg"
-import third from "./imges/3.jpg"
-import fourth from "./imges/4.jpg"
-import fift from "./imges/5.jpg"
-import sixth from "./imges/6.jpg"
-import seventh from "./imges/7.jpg"
-import eighth from "./imges/8.jpg"
-import ningth from "./imges/9.jpg"
-import twlwth from "./imges/12.jpg"
+
+let intViewportWidth = window.innerWidth;
+
 
 
 const Galery = () => {
     return (
         <div className="foto_container">
             <div className="fotolist">
-                <div className="foto bg_foto1">
-                    <img src={first} alt="chest"/>
+                <div className="img_fade  bg_foto1">
+                    <a href = "/images/full_images/full_1.jpg"><img className="foto" src="/images/1.jpg" alt="error"/></a>
                 </div>
-                <div className="foto bg_foto2">
-                    <img src={second} alt="chest"/>
+                <div className="img_fade  bg_foto2">
+                    <a href = "/images/full_images/full_2.jpg"><img className="foto"  src="/images/2.jpg" alt="error"/></a>
                 </div>
-                <div className="foto bg_foto3">
-                    <img src={fourth} alt="chest"/>
+                <div className="img_fade  bg_foto3">
+                    <a href = "/images/full_images/full_4.jpg"><img className="foto"  src="/images/4.jpg" alt="error"/></a>
                 </div>
-                <div className="foto bg_foto4">
-                    <img src={sixth} alt="chest"/>
+                <div className="img_fade  bg_foto4">
+                    <a href = "/images/full_images/full_6.jpg"><img className="foto"  src="/images/6.jpg" alt="error"/></a>
                 </div>
-                <div className="second_row bg_foto5">
-                    <img src={ningth} alt="chest"/>
+                <div className="img_fade  bg_foto5">
+                    <a href = "/images/full_images/full_9.jpg"><img className="foto"  src="/images/9.jpg" alt="error"/></a>
                 </div>
-                <div className="second_row bg_foto6">
-                    <img src={seventh} alt="chest"/>
+                <div className="img_fade  bg_foto6">
+                    <a href = "/images/full_images/full_7.jpg"><img className="foto"  src="/images/7.jpg" alt="error"/></a>
                 </div>
-                <div className="second_row bg_foto7">
-                    <img src={fift} alt="chest"/>
+                <div className="img_fade  bg_foto7">
+                    <a href = "/images/full_images/full_5.jpg"><img className="foto"  src="/images/5.jpg" alt="error"/></a>
                 </div>
-                <div className="foto bg_foto8">
-                    <img src={twlwth} alt="chest"/>
+                <div className="img_fade  bg_foto8">
+                    <a href = "/images/full_images/full_12.jpg"><img className="foto"  src="/images/12.jpg" alt="error"/></a>
                 </div>
-                <div className="foto bg_foto9">
-                    <img src={third} alt="chest"/>
+                <div className="img_fade  bg_foto9">
+                    <a href = "/images/full_images/full_3.jpg"><img className="foto"  src="/images/3.jpg" alt="error"/></a>
                 </div>
-                <div className="foto bg_foto10">
-                    <img src={eighth} alt="chest"/>
+                <div className="img_fade  bg_foto10">
+                    <a href = "/images/full_images/full_8.jpg"><img className="foto"  src="/images/8.jpg" alt="error"/></a>
                 </div>
             </div>
         </div>
