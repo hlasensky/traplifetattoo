@@ -8,8 +8,6 @@ import AboutMe from '../components/AboutMe/AboutMe';
 const App = () => {
     return (
         <div>
-            <LandingPage />
-            <AboutMe />
             <Contact />
         </div>
     );
