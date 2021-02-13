@@ -31,6 +31,9 @@
             height: 35vw;
             margin-bottom: 5rem;
         }
+        @media only screen and (max-width: $bp-mobile) {
+            height: 45vw;
+        }
     }
 
     &__box {
