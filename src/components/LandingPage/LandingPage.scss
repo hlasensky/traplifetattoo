@@ -10,9 +10,19 @@
     clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
     background-color: red;
 
+
     &__box {
         margin-top: 24rem;
         margin-left: 20rem;
+        @media only screen and (max-width: $bp-medium) {
+            margin-left: 8rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            margin-left: 6rem;
+        }
+        @media only screen and (max-width: $bp-mobile) {
+            margin-left: 3rem;
+        }
     }
 
     &__header{
@@ -21,12 +31,34 @@
         &-primary {
             height: 12rem;
             font-size: 9rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                height: 10rem;
+                font-size: 8rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                font-size: 8rem;
+            }
+            @media only screen and (max-width: $bp-mobile) {
+                height: 7rem;
+                font-size: 4.8rem;
+            }
         }
 
         &-secondary {
             font-weight: 200;
             font-size: 3rem;
             font-family: 'Tuffy-Italic';
+
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 2.5rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                font-size: 3rem;
+            }
+            @media only screen and (max-width: $bp-mobile) {
+                font-size: 2rem;
+            }
         }
     }
     &__btn {

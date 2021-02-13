@@ -13,3 +13,18 @@ $font-size-huge: 2.5rem;
 $font-size-large: 2rem;
 $font-size-normal: 1.2rem;
 
+//SCREEN SIZES
+
+$bp-largest: 84.375em; // 1350px 1350/16 = 84.375em
+$bp-medium: 62.5em;
+$bp-small: 40.625em;
+$bp-mobile: 30em;
+
+
+
+//EXAMPLE OF MEDIAQUERY
+
+@media only screen and (max-width: $bp-largest) {
+
+}
+
