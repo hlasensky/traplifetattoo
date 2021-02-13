@@ -1,0 +1,17 @@
+.scrollbutton {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    transition: 0.18s;
+
+    z-index: 9999999;
+
+
+    &-icon {
+        width: 7rem;
+    }
+}
+
+.scrollbutton:hover {
+    transform: scale(1.05);
+}

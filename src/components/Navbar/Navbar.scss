@@ -38,6 +38,10 @@
             transform: scale(1.05);
             cursor: pointer;
         }
+        & > a {
+            text-decoration: none;
+            color: $color-wite;
+        }
     }
 }
 .hamburger {
