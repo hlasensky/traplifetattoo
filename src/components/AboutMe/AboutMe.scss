@@ -8,32 +8,54 @@
     margin-top: -10.1vh;
 
     &__content {
-        width: 70vw;
+        width: 80vw;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin: 0 auto 0 auto;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            width: 90vw;
+        }
         
     }
 
     &__image {
-        height: 55rem;
+        height: 60rem;
         border: 0.6rem solid $color-wite;
+        @media only screen and (max-width: $bp-largest) {
+            height: 35vw;
+            margin-bottom: 5rem;
+        }
     }
 
     &__box {
-        width: 70rem;
         margin-left: 5rem;
+        text-align: center;
+        @media only screen and (max-width: $bp-largest) {
+            margin-left: 5;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            margin-left: 0;
+        }
     }
 
     &__header{
         color: $color-wite;
         font-size: 7rem;
         text-transform: uppercase;
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 5rem;
+        }
     }
 
     &__text {
         color: $color-wite;
         font-size: 1.6rem;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.2rem;
+        }
     }
 
     &__something {
