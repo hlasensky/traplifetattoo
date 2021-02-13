@@ -7,7 +7,7 @@ const AboutMe = () => {
             <div className='aboutme__content'>
                 <img className='aboutme__image' src='/images/profile-image.png' alt='profile-image' id='aboutme' />
                 <div className='aboutme__box'>
-                    <h1 className='aboutme__header'>karel novák</h1>
+                    <h1 className='aboutme__header'>jméno příjmení</h1>
                     <p className='aboutme__text'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Suspendisse fermentum dolor nec tortor dapibus eleifend.

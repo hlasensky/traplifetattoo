@@ -24,7 +24,7 @@
 
     &__image {
         height: 60rem;
-        border: 0.6rem solid $color-wite;
+        border: 0.6rem solid $color-white;
         @media only screen and (max-width: $bp-largest) {
             height: 35vw;
             margin-bottom: 5rem;
@@ -43,7 +43,7 @@
     }
 
     &__header{
-        color: $color-wite;
+        color: $color-white;
         font-size: 7rem;
         text-transform: uppercase;
         @media only screen and (max-width: $bp-largest) {
@@ -52,7 +52,7 @@
     }
 
     &__text {
-        color: $color-wite;
+        color: $color-white;
         font-size: 1.6rem;
         @media only screen and (max-width: $bp-medium) {
             font-size: 1.2rem;
@@ -60,7 +60,7 @@
     }
 
     &__something {
-        color: $color-wite;
+        color: $color-white;
         font-size: 3rem;
         text-align: right;
         margin-top: 5rem;

@@ -17,7 +17,7 @@ const LandingPage = () => {
             <Navbar className='landingpage__navbar' />
             <div className='landingpage__box'>
                 <h1 className='landingpage__header landingpage__header-primary'>best tattoo</h1>
-                <h2 className='landingpage__header landingpage__header-secondary'>hello i am guy and i make the best tattoo in this country</h2>
+                <h2 className='landingpage__header landingpage__header-secondary'>hello i am guy and i make the best tattoos in this country</h2>
             </div>
             <div className='landingpage__arrow'>
                 <a scroll={scrollWidthOffset} href='#aboutme'><img className='landingpage__btn' src='/images/arrow-icon.png' /></a>
