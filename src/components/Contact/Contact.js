@@ -2,20 +2,21 @@ import React from 'react';
 import './Contact.scss'
 
 const Contact = () => {
+
     return (
         <div className='contact'>
             <h1 className='contact__header'>JAK MĚ KONTAKTOVAT?</h1>
 
             <div className='contact__main'>
-                <iframe className='contact__main-container' src="https://maps.google.com/maps?q=Osv%C4%9Btim&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <iframe className='contact__main-container contact__main-map' src="https://maps.google.com/maps?q=Osv%C4%9Btim&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 <div className='contact__main-container'>
                     <img className='contact__main-polygon' src='/images/polygon.png' alt='polygon'/>
-                    <form className='contact__main-form'>
+                    <form className='contact__main-form' action='POST' data-netlify='true' >
                         <div className='contact__main-form-header'>EMAIL</div>
                         <div className='contact__main-form-inputs'>
-                            <input className='contact__main-form-input' placeholder='CELÉ JMÉNO' type='text' /><br />
-                            <input className='contact__main-form-input' type='email' placeholder='EMAIL' /><br />
-                            <textarea className='contact__main-form-textarea' placeholder='ZPRÁVA' style={{resize: 'none'}}></textarea><br />
+                            <input className='contact__main-form-input' name='name' placeholder='CELÉ JMÉNO' type='text' /><br />
+                            <input className='contact__main-form-input' name='email' type='email' placeholder='EMAIL' /><br />
+                            <textarea className='contact__main-form-textarea' name='message' placeholder='ZPRÁVA' style={{resize: 'none'}}></textarea><br />
                             <div className='contact__main-form-submit'>ODESLAT</div>
                         </div>
                     </form>
