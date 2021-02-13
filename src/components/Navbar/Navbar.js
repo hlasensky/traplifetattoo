@@ -27,10 +27,10 @@ const Navbar = () => {
         if(isActive === true) {
             return(
                     <ul>
-                        <li className='hamburger__list-item'>home</li>
-                        <li className='hamburger__list-item'>o mně</li>
-                        <li className='hamburger__list-item'>galerie</li>
-                        <li className='hamburger__list-item'>kontaktuj mě</li>
+                        <li className='hamburger__list-item' scroll={scrollWidthOffset}><a className='hamburger__list-a' href="#home">domů</a></li>
+                        <li className='hamburger__list-item' scroll={scrollWidthOffset}><a className='hamburger__list-a' href="#aboutme">o mně</a></li>
+                        <li className='hamburger__list-item' scroll={scrollWidthOffset}><a className='hamburger__list-a' href="#galery">galerie</a></li>
+                        <li className='hamburger__list-item' scroll={scrollWidthOffset}><a className='hamburger__list-a' href="#contact">kontakt</a></li>
                     </ul>
             )
         }
