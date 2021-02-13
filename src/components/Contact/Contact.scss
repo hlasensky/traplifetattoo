@@ -130,11 +130,14 @@
                 background-color: $color-white;
                 color: #323232;
                 font-size: 1.8rem;
-                text-align: center;
-                margin: 0 auto;
                 margin-top: 2rem;
                 font-family: 'Tuffy-Bold';
                 cursor: pointer;
+                border: none;
+
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
 
                 @media only screen and (max-width: 1550px) {
                     width: 30%;
@@ -142,6 +145,10 @@
 
                 @media only screen and (max-width: 550px) {
                     width: 40%;
+                }
+                
+                &:focus {
+                    outline: none;
                 }
             }
         }
