@@ -7,7 +7,8 @@ let intViewportWidth = window.innerWidth;
 
 const Galery = () => {
     return (
-        <div className="foto_container">
+        <div className="foto_container" style={{ backgroundImage: "url('/images/bg_img_2.png')"}} id='galery'>
+            <h1 class="h1_galery"><bold>GALERIE</bold></h1>
             <div className="fotolist">
                 <div className="img_fade  bg_foto1">
                     <a href = "/images/full_images/full_1.jpg"><img className="foto" src="/images/1.jpg" alt="error"/></a>
@@ -39,9 +40,10 @@ const Galery = () => {
                 <div className="img_fade  bg_foto10">
                     <a href = "/images/full_images/full_8.jpg"><img className="foto"  src="/images/8.jpg" alt="error"/></a>
                 </div>
+                
             </div>
+            <a href="https://www.instagram.com/traplifetattoo/" target="_blank"><div className='btn_galery'>DALŠÍ</div></a>
         </div>
-        
     );
 }
 

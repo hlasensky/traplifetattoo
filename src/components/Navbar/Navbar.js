@@ -36,6 +36,11 @@ const Navbar = () => {
         }
     }
     
+    const scrollWidthOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -90; 
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' })
+    }
   
     const renderNavbar = () => {
         if(width < 1000) {
@@ -65,10 +70,10 @@ const Navbar = () => {
                 <h3 className='navbar__logo-text'>company name</h3>
             </div>
                 <ul className='navbar__box'>
-                    <li className='navbar__item'>domů</li>
-                    <li className='navbar__item'>o mně</li>
-                    <li className='navbar__item'>galerie</li>
-                    <li className='navbar__item'>kontakt</li>
+                    <li className='navbar__item' scroll={scrollWidthOffset}><a href="#home">domů</a></li>
+                    <li className='navbar__item' scroll={scrollWidthOffset}><a href="#aboutme">o mně</a></li>
+                    <li className='navbar__item' scroll={scrollWidthOffset}><a href="#galery">galerie</a></li>
+                    <li className='navbar__item' scroll={scrollWidthOffset}><a href="#contact">kontakt</a></li>
                 </ul>
             </div>
             )

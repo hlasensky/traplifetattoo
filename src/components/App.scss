@@ -27,7 +27,8 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px
     font-family: 'Segoe UI'; // default font
-
+    scroll-behavior: smooth;
+    
     @media only screen and (max-width: $bp-small) {
         font-size: 50%;
     }
