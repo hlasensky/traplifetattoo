@@ -11,13 +11,13 @@ const Contact = () => {
                 <iframe className='contact__main-container contact__main-map' src="https://maps.google.com/maps?q=Brno&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 <div className='contact__main-container'>
                     <img className='contact__main-polygon' src='/images/polygon.png' alt='polygon'/>
-                    <form className='contact__main-form' action='POST' data-netlify='true' netlify>
+                    <form action='/contact' className='contact__main-form' name='contact' method='POST'>
                         <div className='contact__main-form-header'>EMAIL</div>
                         <div className='contact__main-form-inputs'>
                             <input className='contact__main-form-input' name='name' placeholder='CELÉ JMÉNO' type='text' /><br />
                             <input className='contact__main-form-input' name='email' type='email' placeholder='EMAIL' /><br />
                             <textarea className='contact__main-form-textarea' name='message' placeholder='ZPRÁVA' style={{resize: 'none'}}></textarea><br />
-                            <div className='contact__main-form-submit'>ODESLAT</div>
+                            <button type='submit' className='contact__main-form-submit'>ODESLAT</button>
                         </div>
                     </form>
                 </div>
