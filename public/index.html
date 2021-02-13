@@ -27,13 +27,11 @@
     <title>React App</title>
   </head>
   <body>
-    <form name='contact' action='/contact' netlify netlify-honeypot='bot-field' hidden>
-      <div>
-          <input type='hidden' name='form-name' value='contact'/>
-          <input required name='name'type='text'/><br />
-          <input required name='email' type='email'/><br />
-          <textarea name='message' placeholder='ZPRÁVA'></textarea>
-      </div>
+    <form name='contact' action='/' netlify netlify-honeypot='bot-field' hidden>
+      <input type='hidden' name='form-name' value='contact'/>
+      <input required name='name'type='text'/><br />
+      <input required name='email' type='email'/><br />
+      <textarea name='message' placeholder='ZPRÁVA'></textarea>
     </form>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
