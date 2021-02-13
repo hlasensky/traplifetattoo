@@ -27,11 +27,12 @@
     <title>React App</title>
   </head>
   <body>
-    <form name='contact' data-netlify="true" netlify-honeypot='bot-field' enctype="application/x-www-form-urlencoded" hidden>
+    <form name='contact' netlify action="/" netlify-honeypot='bot-field' hidden>
       <input type='hidden' name='form-name' value='contact'/>
       <input required name='name'type='text'/>
       <input required name='email' type='email'/>
       <textarea name='message' placeholder='ZPRÁVA'></textarea>
+      <button type='submit'>ODESLAT</button>
     </form>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>

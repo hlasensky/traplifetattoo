@@ -15,10 +15,7 @@ const Contact = () => {
                     className='contact__main-form' 
                     name='contact' 
                     method='POST'
-                    action="/thank-you/english.html" 
                     data-netlify="true"  
-                    data-netlify-honeypot="bot-field" 
-                    enctype="application/x-www-form-urlencoded"
                     >
                         <div className='contact__main-form-header'>EMAIL</div>
                         <div className='contact__main-form-inputs'>
