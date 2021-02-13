@@ -6,6 +6,7 @@ import Galery from './Galery/Galery';
 import AboutMe from './AboutMe/AboutMe';
 import ScrollButton from './ScrollButton/ScrollButton'
 
+
 const App = () => {
     
     return (
