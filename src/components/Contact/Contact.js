@@ -11,7 +11,7 @@ const Contact = () => {
                 <iframe className='contact__main-container contact__main-map' src="https://maps.google.com/maps?q=Brno&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 <div className='contact__main-container'>
                     <img className='contact__main-polygon' src='/images/polygon.png' alt='polygon'/>
-                    <form className='contact__main-form' action='POST' data-netlify='true' netlify>
+                    <form className='contact__main-form' name='contact' method='POST' data-netlify='true'>
                         <div className='contact__main-form-header'>EMAIL</div>
                         <div className='contact__main-form-inputs'>
                             <input className='contact__main-form-input' name='name' placeholder='CELÉ JMÉNO' type='text' /><br />
