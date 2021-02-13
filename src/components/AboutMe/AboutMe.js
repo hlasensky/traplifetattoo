@@ -3,9 +3,9 @@ import './AboutMe.scss'
 
 const AboutMe = () => {
     return (
-        <div className='aboutme'>
+        <div className='aboutme' id='aboutme'>
             <div className='aboutme__content'>
-                <img className='aboutme__image' src='/images/profile-image.png' alt='profile-image' id='aboutme' />
+                <img className='aboutme__image' src='/images/profile-image.png' alt='profile-image' />
                 <div className='aboutme__box'>
                     <h1 className='aboutme__header'>karel novák</h1>
                     <p className='aboutme__text'>
