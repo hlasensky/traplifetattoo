@@ -19,8 +19,8 @@ const Contact = () => {
                     >
                         <div className='contact__main-form-header'>EMAIL</div>
                         <div className='contact__main-form-inputs'>
-                            <input className='contact__main-form-input' name='name' placeholder='CELÉ JMÉNO' type='text' /><br />
-                            <input className='contact__main-form-input' name='email' type='email' placeholder='EMAIL' /><br />
+                            <input required className='contact__main-form-input' name='name' placeholder='CELÉ JMÉNO' type='text' /><br />
+                            <input required className='contact__main-form-input' name='email' type='email' placeholder='EMAIL' /><br />
                             <textarea className='contact__main-form-textarea' name='message' placeholder='ZPRÁVA' style={{resize: 'none'}}></textarea><br />
                             <button type='submit' className='contact__main-form-submit'>ODESLAT</button>
                         </div>
