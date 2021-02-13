@@ -7,7 +7,7 @@ let intViewportWidth = window.innerWidth;
 
 const Galery = () => {
     return (
-        <div className="foto_container">
+        <div className="foto_container" style={{ backgroundImage: "url('/images/bg_img_2.jpg')"}}>
             <div className="fotolist">
                 <div className="img_fade  bg_foto1">
                     <a href = "/images/full_images/full_1.jpg"><img className="foto" src="/images/1.jpg" alt="error"/></a>
