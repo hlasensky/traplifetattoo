@@ -64,7 +64,6 @@ a {
 }
 
 
-
 .bg_foto2 {
 
     grid-column-start: 2;
@@ -308,7 +307,12 @@ a {
         width: 100%;
         height: auto;
     }
-
+    .bg_foto5{
+        display: none;
+    }
+    .bg_foto6{
+        display: none;
+    }
     
   }
 

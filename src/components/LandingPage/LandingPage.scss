@@ -46,6 +46,7 @@
             font-weight: 200;
             font-size: 3rem;
             font-family: 'Tuffy-Italic';
+            margin-right: 10px ;
 
             @media only screen and (max-width: $bp-medium) {
                 font-size: 2.5rem;
@@ -61,6 +62,12 @@
     &__btn {
         height: 4rem;
         margin-top: 30rem;
+        @media only screen and (max-width: 1110px) {
+                margin-top: 25rem;
+            }
+        @media only screen and (max-width: 650px) {
+                margin-top: 40rem;
+            }
         transition: all .2s;
         @media only screen and (max-height: $sh-small) {
             margin-top: 20rem;
