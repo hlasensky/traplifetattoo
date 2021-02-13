@@ -11,7 +11,7 @@
         margin-top: 2rem;
         margin-left: 2.5rem;
         &-text {
-            color: $color-wite;
+            color: $color-white;
             font-size: 2.2rem;
             text-transform: uppercase;
         }
@@ -31,7 +31,7 @@
 
     &__item {
         font-size: 2.2rem;
-        color: $color-wite;
+        color: $color-white;
         font-weight: 600;
         transition: all .2s;
         &:hover {
@@ -40,7 +40,7 @@
         }
         & > a {
             text-decoration: none;
-            color: $color-wite;
+            color: $color-white;
         }
     }
 }
@@ -54,7 +54,7 @@
         margin-left: 2.5rem;
 
         &-text {
-            color: $color-wite;
+            color: $color-white;
             font-size: 1.6rem;
             text-transform: uppercase;
         }
@@ -72,31 +72,40 @@
         margin-right: 7rem;
     }
     &__line {
-        background-color: $color-wite;
+        background-color: $color-white;
         height: 0.5rem;
         width: 6rem;
     }
 
-    &__list {
-        
+    &__list {  
         width: 16rem;
-        background-color: $color-grey-dark;
+        background-color: rgba($color-grey-dark, 0.6);
         position: absolute;
         right: 2.25rem;
         border-radius: 1rem;
         &-item {
-            color: $color-wite;
+            color: $color-white;
             font-weight: 500;
             font-size: 2rem;
             list-style: none;
             text-transform: uppercase;
             text-align: center;
-        
+            text-decoration: none;
         }
         &-item:hover {
-            background-color: $color-wite;
-            color: rgba($color-grey-dark, 0.5);
+            background-color: $color-white;
+            color: $color-grey-dark;
             cursor: pointer;
+            .hamburger__list-a {
+                color: $color-grey-dark;
+            }
+        }
+        &-a {
+            color: $color-white;
         }
     }
 }
+
+
+
+
