@@ -27,10 +27,10 @@
     <title>React App</title>
   </head>
   <body>
-    <form name='contact' netlify netlify-honeypot='bot-field' hidden>
+    <form name='contact' data-netlify="true" netlify-honeypot='bot-field' enctype="application/x-www-form-urlencoded" hidden>
       <input type='hidden' name='form-name' value='contact'/>
-      <input required name='name'type='text'/><br />
-      <input required name='email' type='email'/><br />
+      <input required name='name'type='text'/>
+      <input required name='email' type='email'/>
       <textarea name='message' placeholder='ZPRÁVA'></textarea>
     </form>
 
