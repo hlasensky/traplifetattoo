@@ -42,9 +42,8 @@ const Galery = () => {
                 </div>
                 
             </div>
-            <div className='btn_galery'>DALŠÍ</div>
+            <a href="https://www.instagram.com/traplifetattoo/" target="_blank"><div className='btn_galery'>DALŠÍ</div></a>
         </div>
-        
     );
 }
 
