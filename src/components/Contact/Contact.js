@@ -15,7 +15,6 @@ const Contact = () => {
                     className='contact__main-form' 
                     name='contact' 
                     method='POST'
-                    onSubmit='submit'
                     >
                         <div className='contact__main-form-header'>EMAIL</div>
                         <div className='contact__main-form-inputs'>
