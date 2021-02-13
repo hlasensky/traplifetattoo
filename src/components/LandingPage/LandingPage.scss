@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import '../../styles/animations.scss';
 
 .landingpage {
     position: relative;
@@ -25,9 +26,12 @@
     &__header{
         color: $color-white;
         text-transform: uppercase;
+        
         &-primary {
             height: 12rem;
             font-size: 9rem;
+            @include animation('moveinleft 1s');
+            
 
             @media only screen and (max-width: $bp-medium) {
                 height: 10rem;
@@ -47,6 +51,7 @@
             font-size: 3rem;
             font-family: 'Tuffy-Italic';
             margin-right: 10px ;
+            @include animation('moveinright 1s');
 
             @media only screen and (max-width: $bp-medium) {
                 font-size: 2.5rem;
@@ -82,5 +87,6 @@
     }
     &__arrow {
         text-align: center;
+        @include animation('moveupanddown 1s');
     }
 }

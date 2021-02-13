@@ -25,14 +25,14 @@
     }
 
     &__image {
-        height: 60rem;
+        height: 50rem;
         border: 0.6rem solid $color-white;
         @media only screen and (max-width: $bp-largest) {
-            height: 35vw;
+            height: 40vw;
             margin-bottom: 5rem;
         }
         @media only screen and (max-width: $bp-mobile) {
-            height: 45vw;
+            height: 60vw;
         }
     }
 
