@@ -17,8 +17,12 @@ const Navbar = () => {
         window.addEventListener("resize", handleWindowResize);
 
         const onBodyClick = (event) => {
-            if (ref.current.contains(event.target)) {
-                return;
+            try {
+                if (ref.current.contains(event.target)) {
+                    return;
+                }
+            } catch(err) {
+                console.log(err);
             }
 
           setIsActive(false);
