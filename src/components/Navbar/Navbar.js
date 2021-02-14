@@ -1,18 +1,41 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './Navbar.scss'
 
 const Navbar = () => {
 
     const [width, setWidth] = useState(window.innerWidth);
     const [isActive, setIsActive] = useState(false);
+
+    const ref = useRef();
   
     useEffect(() => {
       const handleWindowResize = () => {
         setWidth(window.innerWidth);
       }
-  
+
         window.addEventListener("resize", handleWindowResize);
+
+        const onBodyClick = (event) => {
+            try {
+                if (ref.current.contains(event.target)) {
+                    return;
+                }
+            } catch(err) {
+                console.log(err);
+            }
+
+          setIsActive(false);
+         };
+
+         document.body.addEventListener('click', onBodyClick);
+
+         return () => {
+            document.body.removeEventListener('click', onBodyClick);
+        };
+
+
+
     }, []);
 
     const checkIsActive = () => {
@@ -45,13 +68,13 @@ const Navbar = () => {
     const renderNavbar = () => {
         if(width < 1000) {
             return (
-                <div>
+                <div ref={ref}>
                 <div className='hamburger'>
                     <div className='hamburger__logo'>
                         <img className='hamburger__logo-img' src='/images/logo-example.png' alt='logo' />
                         <h3 className='hamburger__logo-text'>company name</h3>
                     </div>
-                        <div className='hamburger__box' onClick={() => checkIsActive()}>
+                        <div className='hamburger__box' onClick={() => { checkIsActive(); setIsActive(!isActive); }}>
                             <div className='hamburger__line'></div>
                             <div className='hamburger__line'></div>
                             <div className='hamburger__line'></div>

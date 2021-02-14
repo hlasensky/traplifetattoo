@@ -1,7 +1,22 @@
 import React from 'react';
-import './Contact.scss'
+import emailjs from 'emailjs-com';
+import './Contact.scss';
 
 const Contact = () => {
+
+    const sendEmail = (e) => {
+        e.preventDefault()
+
+        emailjs.sendForm('gmail', 'traplifetatto-template', e.target, process.env.REACT_APP_EMAILJS_KEY)
+            .then((result) => {
+                console.log(result.text);
+            }, (err) => {
+                console.log(err.text)
+            })
+
+            e.target.reset()
+        
+    }
 
     return (
         <div className='contact' id='contact'>
@@ -11,13 +26,13 @@ const Contact = () => {
                 <iframe className='contact__main-container contact__main-map' src="https://maps.google.com/maps?q=Brno&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 <div className='contact__main-container'>
                     <img className='contact__main-polygon' src='/images/polygon.png' alt='polygon'/>
-                    <form className='contact__main-form' action='POST' data-netlify='true' netlify>
+                    <form onSubmit={(e) => sendEmail(e)} className='contact__main-form' name='contact'>
                         <div className='contact__main-form-header'>EMAIL</div>
                         <div className='contact__main-form-inputs'>
-                            <input className='contact__main-form-input' name='name' placeholder='CELÉ JMÉNO' type='text' /><br />
-                            <input className='contact__main-form-input' name='email' type='email' placeholder='EMAIL' /><br />
+                            <input required className='contact__main-form-input' name='name' placeholder='CELÉ JMÉNO' type='text' /><br />
+                            <input required className='contact__main-form-input' name='email' type='email' placeholder='EMAIL' /><br />
                             <textarea className='contact__main-form-textarea' name='message' placeholder='ZPRÁVA' style={{resize: 'none'}}></textarea><br />
-                            <div className='contact__main-form-submit'>ODESLAT</div>
+                            <button type='submit' className='contact__main-form-submit'>ODESLAT</button>
                         </div>
                     </form>
                 </div>
