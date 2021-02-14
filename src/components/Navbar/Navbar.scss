@@ -1,10 +1,12 @@
 @import './../../styles/variables.scss';
+@import './../../styles/animations.scss';
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    @include animation('fullshow 1s');
     &__logo {
         display: flex;
         align-items: center;
