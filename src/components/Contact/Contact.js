@@ -4,8 +4,6 @@ import './Contact.scss';
 
 const Contact = () => {
 
-    console.log(process.env.REACT_APP_EMAILJS_KEY);
-
     const sendEmail = (e) => {
         e.preventDefault()
 
