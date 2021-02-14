@@ -25,6 +25,14 @@ const Contact = () => {
                             <button type='submit' className='contact__main-form-submit'>ODESLAT</button>
                         </div>
                     </form>
+                    <form
+                    name='contact-form' 
+                    method='POST'
+                    data-netlify="true"
+                    >
+                        <input type="text" name="name" />
+                        <input type="submit" />
+                    </form>
                 </div>
 
 
